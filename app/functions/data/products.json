@@ -1,18 +1,18 @@
 [
     {
-      "sku": "DEMO001",
-      "name": "This Pretty Plant",
-      "description": "Look at this pretty plant. Photo by Galina N on Unsplash.",
-      "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=600&h=600&q=80",
-      "amount": 1000,
+      "sku": "001",
+      "name": "Brownie",
+      "description": "She is adorable, child like. The cover photo is by Amber Kipp from Unsplash.",
+      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829849/cats/amber-kipp-75715CVEJhI-unsplash_r7fmae.jpg",
+      "amount": 2200,
       "currency": "USD"
     },
     {
-      "sku": "DEMO002",
-      "name": "Adventure Mug",
-      "description": "We’re going on an adventure! Photo by Annie Spratt on Unsplash.",
-      "image": "https://images.unsplash.com/photo-1454329001438-1752daa90420?auto=format&fit=crop&w=600&h=600&q=80",
-      "amount": 1500,
+      "sku": "002",
+      "name": "Flur",
+      "description": "Flur is a Queen. The cover photo is by Milada Vigerova from Unsplash.",
+      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829841/cats/milada-vigerova-7E9qvMOsZEM-unsplash_etgmbe.jpg",
+      "amount": 2000,
       "currency": "USD"
     }
 ]

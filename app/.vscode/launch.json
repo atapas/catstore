@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+      {
+        "name": "Netlify Debugging",
+        "type": "pwa-node",
+        "request": "launch",
+        "runtimeArgs": ["run-script", "debug"],
+        "runtimeExecutable": "npm",
+        "skipFiles": ["<node_internals>/**"],
+        "resolveSourceMapLocations": [
+            "${workspaceFolder}/**",
+            "!**/node_modules/**"
+        ]
+      }
+    ]
+  }
