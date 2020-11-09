@@ -1,15 +1,12 @@
 require("dotenv").config();
 
-console.log(process.env.STRIPE_SECRET_KEY);
-console.log(process.env);
-
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const inventory = require('./data/products.json');
 
 exports.handler = async (event) => {
-  const { sku, quantity } = JSON.parse(event.body);
+  const { sku } = JSON.parse(event.body);
   const product = inventory.find((p) => p.sku === sku);
-  const validatedQuantity = quantity > 0 && quantity < 11 ? quantity : 1;
+  const validatedQuantity = 1;
 
   console.log(product);
 
