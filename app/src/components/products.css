@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: teal;
+    background: #ff8c00;
     padding: 1rem 5vw;
 }
 
@@ -32,23 +32,8 @@ main {
     max-width: 100%;
 }
 
-.product form {
-    align-items: baseline;
-    display: grid;
-    gap: 0.5rem;
-    grid-template-columns: 70px 50px 1fr;
-}
-
-.product input {
-    border: 1px solid teal;
-    border-radius: 0.25rem;
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-    padding: 0.25rem;
-}
-
 .product button {
-    background: teal;
+    background: #ff8c00;
     border: none;
     border-radius: 0.25rem;
     color: white;
@@ -56,4 +41,5 @@ main {
     font-weight: 800;
     line-height: 1.25rem;
     padding: 0.25rem;
+    cursor: pointer;
 }

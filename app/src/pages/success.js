@@ -1,9 +1,14 @@
 import React from 'react';
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Success = () => {
 
     return (
-        <h1>Success!</h1>
+        <Layout>
+            <SEO title="Cat Store - Success" />
+            <h1>Success!</h1>
+        </Layout>
     )
 }
 
