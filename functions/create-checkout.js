@@ -20,7 +20,7 @@ const getLineItems = products => {
     obj => ({
       name: obj.name, 
       description: obj.description, 
-      images:[obj.image], 
+      images:[obj.image.url], 
       amount: obj.amount, 
       currency: obj.currency,
       quantity: 1

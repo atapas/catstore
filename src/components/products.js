@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import getStripe from "../utils/stripejs";
 import { ShoppingCart } from 'react-feather';
+import Image from './image';
+
 import './products.css';
 
 const Products = () => {
@@ -75,10 +77,10 @@ const Products = () => {
                 <div className="products">
                     {products.map((product, index) => (
                         <div className="product" key={`${product.sku}-image`}>
-                            <img 
-                                src={product.image} 
-                                alt={product.name} >
-                            </img>
+                          
+                            <Image fileName={product.image.key} 
+                                style={{ width: '100%' }} 
+                                alt={product.name} />
                             <h2>{product.name}</h2>
                             <p className="description">{product.description}</p>
                             <p className="price">Price: <b>${product.amount}</b></p>

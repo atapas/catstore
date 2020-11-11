@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Cat Store - Cats love you!`,
+    title: `Happy Paws - Cats love you!`,
     description: `Cat store is the one point solution for your Cat`,
     author: `@gatsbyjs`,
   },

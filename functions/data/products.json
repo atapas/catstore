@@ -3,7 +3,10 @@
       "sku": "001",
       "name": "Brownie",
       "description": "She is adorable, child like. The cover photo is by Dorota Dylka from Unsplash.",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604912361/cats/dorota-dylka-_VX-6amHgDY-unsplash_th9hg9.jpg",
+      "image": {
+        "url": "https://res.cloudinary.com/atapas/image/upload/v1604912361/cats/dorota-dylka-_VX-6amHgDY-unsplash_th9hg9.jpg",
+        "key": "brownie.jpg"
+      },
       "amount": 2200,
       "currency": "USD"
     },
@@ -11,7 +14,10 @@
       "sku": "002",
       "name": "Flur",
       "description": "Flur is a Queen. The cover photo is by Milada Vigerova from Unsplash.",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829841/cats/milada-vigerova-7E9qvMOsZEM-unsplash_etgmbe.jpg",
+      "image": {
+        "url": "https://res.cloudinary.com/atapas/image/upload/v1604829841/cats/milada-vigerova-7E9qvMOsZEM-unsplash_etgmbe.jpg",
+        "key": "flur.jpg"
+      },
       "amount": 2000,
       "currency": "USD"
     },
@@ -19,7 +25,10 @@
       "sku": "003",
       "name": "Candy",
       "description": "Candy is sweet dear. The cover photo is by Liza Sayfullina from Unsplash",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829804/cats/luiza-sayfullina-9giow4jXrzM-unsplash_ujplgt.jpg",
+      "image": {
+        "url": "https://res.cloudinary.com/atapas/image/upload/v1604829804/cats/luiza-sayfullina-9giow4jXrzM-unsplash_ujplgt.jpg",
+        "key": "candy.jpg"
+      },
       "amount": 2800,
       "currency": "USD"
     },
@@ -27,7 +36,10 @@
       "sku": "004",
       "name": "Kitty",
       "description": "Kitty is sweet, adorable and calm. The cover photo is by Ramiz Dedakovic from Unsplash.",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829838/cats/ramiz-dedakovic-9SWHIgu8A8k-unsplash_ewyqpy.jpg",
+      "image": {
+        "url": "https://res.cloudinary.com/atapas/image/upload/v1604829838/cats/ramiz-dedakovic-9SWHIgu8A8k-unsplash_ewyqpy.jpg",
+        "key": "kitty.jpg"
+      },
       "amount": 2500,
       "currency": "USD"
     },
@@ -35,7 +47,10 @@
       "sku": "005",
       "name": "Furry",
       "description": "Furry is careful, playful. The cover photo is by Rana Sawalha from Unsplash.",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829824/cats/rana-sawalha-X7UR0BDz-UY-unsplash_chswfw.jpg",
+      "image": {
+        "url": "https://res.cloudinary.com/atapas/image/upload/v1604829824/cats/rana-sawalha-X7UR0BDz-UY-unsplash_chswfw.jpg",
+        "key": "furry.jpg"
+      },
       "amount": 2050,
       "currency": "USD"
     },
@@ -43,7 +58,10 @@
       "sku": "006",
       "name": "Snowy",
       "description": "Snowy is beautiful, cute and elegant. The cover photo is by Remi Remino from Unsplash",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829788/cats/remi-remino-E9kVmtiqqGE-unsplash_uivwfy.jpg",
+      "image": {
+        "url": "https://res.cloudinary.com/atapas/image/upload/v1604829788/cats/remi-remino-E9kVmtiqqGE-unsplash_uivwfy.jpg",
+        "key": "snowy.jpg"
+      },
       "amount": 3200,
       "currency": "USD"
     },
@@ -51,7 +69,10 @@
       "sku": "007",
       "name": "Lazy",
       "description": "As the name suggest, she is the one! The cover photo is by Timo-Volz from Unsplash.",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829829/cats/timo-volz-ZlFKIG6dApg-unsplash_x3xifk.jpg",
+      "image": {
+        "url": "https://res.cloudinary.com/atapas/image/upload/v1604829829/cats/timo-volz-ZlFKIG6dApg-unsplash_x3xifk.jpg",
+        "key": "lazy.jpg"
+      },
       "amount": 1970,
       "currency": "USD"
     },
@@ -59,7 +80,10 @@
       "sku": "008",
       "name": "Bushy",
       "description": "Bushy is lovely. The cover photo is by Zane Lee from Unsplash.",
-      "image": "https://res.cloudinary.com/atapas/image/upload/v1604829826/cats/zane-lee-VvTVkc_p-eg-unsplash_z5vsoo.jpg",
+      "image": {
+        "url":  "https://res.cloudinary.com/atapas/image/upload/v1604829826/cats/zane-lee-VvTVkc_p-eg-unsplash_z5vsoo.jpg",
+        "key": "bushy.jpg"
+      },
       "amount": 1700,
       "currency": "USD"
     }

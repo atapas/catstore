@@ -6,9 +6,9 @@ import Products from '../components/products';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Cat Store" />
+    <SEO title="Happy Paws" />
     <h1>Hey there 👋</h1>
-    <p>Welcome to the Cat Store. Get a Cat 🐈 and feel awesome.</p>
+    <p>Welcome to the Happy Paws cat store. Get a Cat 🐈 and feel awesome.</p>
     <small>
       This is in test mode. That means you can check out using <a href="https://stripe.com/docs/testing#cards" target="_blank" rel="noreferrer">any of the test card numbers.</a>
     </small>
