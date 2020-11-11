@@ -3,12 +3,38 @@ require("dotenv").config();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const inventory = require('./data/products.json');
 
-exports.handler = async (event) => {
-  const { sku } = JSON.parse(event.body);
-  const product = inventory.find((p) => p.sku === sku);
-  const validatedQuantity = 1;
+const getSelectedProducts = skus => {
+  let selected = [];
+  skus.forEach(sku => {
+    const found = inventory.find((p) => p.sku === sku);
+    if (found) {
+      selected.push(found);
+    }
+  });
 
-  console.log(product);
+  return selected;
+}
+
+const getLineItems = products => {
+  return products.map(
+    obj => ({
+      name: obj.name, 
+      description: obj.description, 
+      images:[obj.image], 
+      amount: obj.amount, 
+      currency: obj.currency,
+      quantity: 1
+    }));
+}
+
+exports.handler = async (event) => {
+  const { skus } = JSON.parse(event.body);
+  const products = getSelectedProducts(skus);
+  const validatedQuantity = 1;
+  const lineItems = getLineItems(products);
+
+  console.log(products);
+  console.log(lineItems);
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
@@ -18,16 +44,7 @@ exports.handler = async (event) => {
     },
     success_url: `${process.env.URL}/success`,
     cancel_url: process.env.URL,
-    line_items: [
-      {
-        name: product.name,
-        description: product.description,
-        images: [product.image],
-        amount: product.amount,
-        currency: product.currency,
-        quantity: validatedQuantity,
-      },
-    ],
+    line_items: lineItems,
   });
 
   return {

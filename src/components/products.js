@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import getStripe from "../utils/stripejs";
+import { ShoppingCart } from 'react-feather';
 import './products.css';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [loaded, setLoaded] = useState(false);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         axios("/api/get-products").then(result => {
@@ -19,10 +21,29 @@ const Products = () => {
         });
     }, []);
 
-    const checkOut = async sku => {
+    const addToCart = sku => {
+        setCart([...cart, sku]);
+    }
+
+    const buyOne = sku => {
+        const skus = [];
+        skus.push(sku);
         const payload = {
-            sku: sku
+            skus: skus
         };
+        performPurchase(payload);
+    }
+
+    const checkOut = () => {
+        console.log('Checking out...');
+        const payload = {
+            skus: cart
+        };
+        performPurchase(payload);
+        console.log('Check out has been done!');
+    }
+
+    const performPurchase = async payload => {
         const response = await axios.post('/api/create-checkout', payload);
         console.log('response', response);
         const stripe = await getStripe(response.data.publishableKey);
@@ -38,6 +59,17 @@ const Products = () => {
     
     return (
         <>
+        <div className="cart">
+            <div className="cart-icon">
+            <ShoppingCart 
+                className="img" 
+                size={64} 
+                color="#ff8c00" 
+                onClick={() => checkOut()} />
+            </div>
+            <div className="cart-badge">{cart.length}</div>
+        </div>
+        
         {
             loaded ? (
                 <div className="products">
@@ -50,7 +82,9 @@ const Products = () => {
                             <h2>{product.name}</h2>
                             <p className="description">{product.description}</p>
                             <p className="price">Price: <b>${product.amount}</b></p>
-                            <button onClick={() => checkOut(product.sku)}>Buy Now</button> 
+                            <button onClick={() => buyOne(product.sku)}>Buy Now</button>
+                            {' '}
+                            <button onClick={() => addToCart(product.sku)}>Add to Cart</button> 
                         </div>
                     ))
                     }
@@ -60,7 +94,6 @@ const Products = () => {
                 <h2>Loading...</h2>
             )
         }
-       
         </>
     )
 };

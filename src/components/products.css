@@ -7,7 +7,8 @@ body {
 
 header {
     background: #ff8c00;
-    padding: 1rem 5vw;
+    padding: 1rem 2.5vw;
+    font-size: 35px;
 }
 
 header a {
@@ -43,3 +44,27 @@ main {
     padding: 0.25rem;
     cursor: pointer;
 }
+
+.cart {
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    top: 100px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -11px;
+    right: -13px;
+    background-color: #FF6600;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 14px;
+    border-radius: 19px;
+}
+
+  
