@@ -43,3 +43,24 @@ main {
     padding: 0.25rem;
     cursor: pointer;
 }
+
+.cart {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF6600;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+  
