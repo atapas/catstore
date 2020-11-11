@@ -59,13 +59,13 @@ const Products = () => {
     
     return (
         <>
-        <div className="cart">
+        <div className="cart" onClick={() => checkOut()}>
             <div className="cart-icon">
             <ShoppingCart 
                 className="img" 
                 size={64} 
                 color="#ff8c00" 
-                onClick={() => checkOut()} />
+            />
             </div>
             <div className="cart-badge">{cart.length}</div>
         </div>
