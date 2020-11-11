@@ -28,13 +28,22 @@ const Products = () => {
     const buyOne = sku => {
         const skus = [];
         skus.push(sku);
-        checkOut(skus);
+        const payload = {
+            skus: skus
+        };
+        performPurchase(payload);
     }
 
-    const checkOut = async () => {
+    const checkOut = () => {
+        console.log('Checking out...');
         const payload = {
             skus: cart
         };
+        performPurchase(payload);
+        console.log('Check out has been done!');
+    }
+
+    const performPurchase = async payload => {
         const response = await axios.post('/api/create-checkout', payload);
         console.log('response', response);
         const stripe = await getStripe(response.data.publishableKey);
@@ -46,14 +55,17 @@ const Products = () => {
         if (error) {
             console.error(error);
         }
-        setCart([...cart, []]);
     }
     
     return (
         <>
         <div className="cart">
             <div className="cart-icon">
-            <ShoppingCart className="img" size={32} color="#ff8c00" onClick={checkOut}/>
+            <ShoppingCart 
+                className="img" 
+                size={64} 
+                color="#ff8c00" 
+                onClick={() => checkOut()} />
             </div>
             <div className="cart-badge">{cart.length}</div>
         </div>
@@ -82,7 +94,6 @@ const Products = () => {
                 <h2>Loading...</h2>
             )
         }
-       
         </>
     )
 };
