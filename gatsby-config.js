@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Happy Paws - Cats love you!`,
-    description: `Cat store is the one point solution for your Cat`,
+    description: `Happy Paws is the one point solution to get your lovely Cat`,
     author: `@gatsbyjs`,
   },
   plugins: [
