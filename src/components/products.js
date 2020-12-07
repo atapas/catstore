@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import getStripe from "../utils/stripejs";
-import { ShoppingCart } from 'react-feather';
+import { ShoppingCart, ShoppingBag } from 'react-feather';
 import Image from './image';
 
 import './products.css';
@@ -84,9 +84,15 @@ const Products = () => {
                             <h2>{product.name}</h2>
                             <p className="description">{product.description}</p>
                             <p className="price">Price: <b>${product.amount}</b></p>
-                            <button onClick={() => buyOne(product.sku)}>Buy Now</button>
+                            <button onClick={() => buyOne(product.sku)}>
+                                <ShoppingBag size={20}></ShoppingBag>
+                                <span>Buy Now</span>
+                            </button>
                             {' '}
-                            <button onClick={() => addToCart(product.sku)}>Add to Cart</button> 
+                            <button onClick={() => addToCart(product.sku)}>
+                                <ShoppingCart size={20}></ShoppingCart>
+                                <span>Add to Cart</span>
+                            </button> 
                         </div>
                     ))
                     }
