@@ -7,8 +7,8 @@
         "url": "https://res.cloudinary.com/atapas/image/upload/v1604912361/cats/dorota-dylka-_VX-6amHgDY-unsplash_th9hg9.jpg",
         "key": "brownie.jpg"
       },
-      "amount": 2200,
-      "currency": "USD"
+      "amount": 220000,
+      "currency": "INR"
     },
     {
       "sku": "002",
@@ -18,8 +18,8 @@
         "url": "https://res.cloudinary.com/atapas/image/upload/v1604829841/cats/milada-vigerova-7E9qvMOsZEM-unsplash_etgmbe.jpg",
         "key": "flur.jpg"
       },
-      "amount": 2000,
-      "currency": "USD"
+      "amount": 200000,
+      "currency": "INR"
     },
     {
       "sku": "003",
@@ -29,8 +29,8 @@
         "url": "https://res.cloudinary.com/atapas/image/upload/v1604829804/cats/luiza-sayfullina-9giow4jXrzM-unsplash_ujplgt.jpg",
         "key": "candy.jpg"
       },
-      "amount": 2800,
-      "currency": "USD"
+      "amount": 280000,
+      "currency": "INR"
     },
     {
       "sku": "004",
@@ -40,8 +40,8 @@
         "url": "https://res.cloudinary.com/atapas/image/upload/v1604829838/cats/ramiz-dedakovic-9SWHIgu8A8k-unsplash_ewyqpy.jpg",
         "key": "kitty.jpg"
       },
-      "amount": 2500,
-      "currency": "USD"
+      "amount": 250000,
+      "currency": "INR"
     },
     {
       "sku": "005",
@@ -51,8 +51,8 @@
         "url": "https://res.cloudinary.com/atapas/image/upload/v1604829824/cats/rana-sawalha-X7UR0BDz-UY-unsplash_chswfw.jpg",
         "key": "furry.jpg"
       },
-      "amount": 2050,
-      "currency": "USD"
+      "amount": 205000,
+      "currency": "INR"
     },
     {
       "sku": "006",
@@ -62,8 +62,8 @@
         "url": "https://res.cloudinary.com/atapas/image/upload/v1604829788/cats/remi-remino-E9kVmtiqqGE-unsplash_uivwfy.jpg",
         "key": "snowy.jpg"
       },
-      "amount": 3200,
-      "currency": "USD"
+      "amount": 320000,
+      "currency": "INR"
     },
     {
       "sku": "007",
@@ -73,8 +73,8 @@
         "url": "https://res.cloudinary.com/atapas/image/upload/v1604829829/cats/timo-volz-ZlFKIG6dApg-unsplash_x3xifk.jpg",
         "key": "lazy.jpg"
       },
-      "amount": 1970,
-      "currency": "USD"
+      "amount": 197000,
+      "currency": "INR"
     },
     {
       "sku": "008",
@@ -84,8 +84,8 @@
         "url":  "https://res.cloudinary.com/atapas/image/upload/v1604829826/cats/zane-lee-VvTVkc_p-eg-unsplash_z5vsoo.jpg",
         "key": "bushy.jpg"
       },
-      "amount": 1700,
-      "currency": "USD"
+      "amount": 170000,
+      "currency": "INR"
     }
   
 ]
