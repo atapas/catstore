@@ -83,7 +83,7 @@ const Products = () => {
                                 alt={product.name} />
                             <h2>{product.name}</h2>
                             <p className="description">{product.description}</p>
-                            <p className="price">Price: <b>₹{product.amount/100}</b></p>
+                            <p className="price">Price: <b>${product.amount/100}</b></p>
                             <button onClick={() => buyOne(product.sku)}>
                                 <ShoppingBag size={20}></ShoppingBag>
                                 <span>Buy Now</span>
