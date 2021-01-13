@@ -6,7 +6,7 @@ I love Cats 🐈. We will build a pet store app called `Happy Paws` for our cust
 
 Here is a quick glimpse of the app we intend to build,
 
-[![catstore](https://img.youtube.com/vi/8BeCk71wTUM/0.jpg)](https://www.youtube.com/watch?v=8BeCk71wTUM)
+[![catstore](https://img.youtube.com/vi/cpA43AVPesY/0.jpg)](https://www.youtube.com/watch?v=cpA43AVPesY)
 
 # 👍 Want to Motivate?
 Thanks for your time to reading this. Feel free to clone/fork/improve. Who doesn't want motivations? Give the project a star(⭐) if you liked the work.
