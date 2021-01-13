@@ -75,7 +75,7 @@ const Products = () => {
         {
             loaded ? (
                 <div className="products">
-                    {products.map((product, index) => (
+                    {products.length > 0 && products.map((product, index) => (
                         <div className="product" key={`${product.sku}-image`}>
                           
                             <Image fileName={product.image.key} 

@@ -9,9 +9,11 @@ const IndexPage = () => (
     <SEO title="Happy Paws" />
     <h1>Hey there 👋</h1>
     <p>Welcome to the Happy Paws cat store. Get a Cat 🐈 and feel awesome.</p>
-    <small>
-      This is in test mode. That means you can check out using <a href="https://stripe.com/docs/testing#cards" target="_blank" rel="noreferrer">any of the test card numbers.</a>
-    </small>
+    <blockquote>
+      <p>
+        We are in the demo mode. Please check out using any of the test card numbers mentioned <a href="https://stripe.com/docs/testing#cards" target="_blank" rel="noreferrer">here.</a>
+      </p>
+    </blockquote>
     <Products />
   </Layout>
 )

@@ -1,8 +1,26 @@
 body {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-        Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     margin: 0;
+    font-family: Roboto;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+blockquote p {
+    display: inline;
 }
 
 header {
@@ -26,7 +44,7 @@ main {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .product img {
@@ -66,7 +84,7 @@ main {
     right: -13px;
     background-color: #FF6600;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: bold;
     padding: 5px 14px;
     border-radius: 19px;
